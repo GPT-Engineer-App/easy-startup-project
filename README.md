@@ -1,38 +1,48 @@
-# easy-startup-project
+# Your New App
 
-Create a bare-bones application that I can modify and build on.
+Welcome to your new web application! This is a bare-bones structure that you can easily modify and build upon.
 
-## Collaborate with GPT Engineer
+## Getting Started
 
-This is a [gptengineer.app](https://gptengineer.app)-synced repository 🌟🤖
+1. Clone this repository
+2. Install dependencies:
+   ```
+   npm install
+   ```
+3. Start the development server:
+   ```
+   npm run dev
+   ```
+4. Open your browser and navigate to `http://localhost:5173`
 
-Changes made via gptengineer.app will be committed to this repo.
+## Project Structure
 
-If you clone this repo and push changes, you will have them reflected in the GPT Engineer UI.
+- `src/pages/`: Contains the main pages of your application
+- `src/layouts/`: Includes layout components (e.g., navbar)
+- `src/components/`: Place for reusable components
+- `src/nav-items.jsx`: Central place to define navigation items
 
-## Tech stack
+## Customizing Your App
 
-This project is built with .
+1. **Adding New Pages**: 
+   - Create a new file in `src/pages/`
+   - Add the new page to `src/nav-items.jsx`
 
-- Vite
-- React
-- shadcn-ui
-- Tailwind CSS
+2. **Modifying the Layout**:
+   - Edit `src/layouts/navbar/index.jsx` to change the overall layout
 
-## Setup
+3. **Styling**:
+   - This project uses Tailwind CSS. Modify `src/index.css` for global styles
+   - Use Tailwind classes in your components for styling
 
-```sh
-git clone https://github.com/GPT-Engineer-App/easy-startup-project.git
-cd easy-startup-project
-npm i
-```
+4. **Adding New Features**:
+   - Utilize shadcn components from `@/components/ui/` for consistent UI elements
+   - Create new components in `src/components/` for reusable parts of your app
 
-```sh
-npm run dev
-```
+## Available Scripts
 
-This will run a dev server with auto reloading and an instant preview.
+- `npm run dev`: Starts the development server
+- `npm run build`: Builds the app for production
+- `npm run lint`: Runs the linter
 
-## Requirements
-
-- Node.js & npm - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+Happy coding!
